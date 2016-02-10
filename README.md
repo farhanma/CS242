@@ -1,9 +1,9 @@
 
 # GO Game
 
-An implementation of the Chinese board game GO.
-This is a final project for Programming Languages course (CS242) given at KAUST in Spring 2014.
-Implemented using: Google GO Programming Language
+This project is an implementation of the Chinese board game GO.
+This is a final project for the Programming Languages course (CS242) given at KAUST in Spring 2014.
+Implemented using: Google GO Programming Language.
 
 **Development Team:**
 
@@ -46,5 +46,5 @@ You need to have a GO compiler installed on your machine (https://golang.org/doc
 
 ## Usage
 
-First, you need to run the **baduk.go** via typing `go run baduk.go` in your terminal. Then, run **goGraphics.py** via `python2 goGraphics.py`. 
-You play through your terminal, following the instructions and the pyGame will simulate your movement on the X window screen.   
+First, you need to run the **baduk.go** via typing `go run baduk.go` in your terminal. Then, run **goGraphics.py** via typing `python2 goGraphics.py`. 
+You play the game using the terminal window, following the instructions on the screen, and the pyGame will simulate your movements on the X window screen. 
