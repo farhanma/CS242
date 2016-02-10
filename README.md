@@ -40,6 +40,25 @@ This is because players usually end the game early when they think one player is
 The program would not easily be able to evaluate this as well as humans do, 
 hence we have decided not to implement an AI-based scoring system
 
+## Implementation Details
+
+* To take advantage of the GO language's strong support for Interfaces, we use an object-oriented approach for handling the game. 
+The entire state of the board is stored in a struct called **Board**
+* The most important Board variable is the board layout, stored in a Slice named **cell**, which is a unique feature of GO. 
+It operates in the same way as an array, holding integers to represent which coloured stone sits in the corresponding position. 
+Cell contents can be accessed in constant amortised time, through the Board member functions
+* The Board struct holds various 'maps' implemented as hash tables. These maps keep track of the groups of stones and their locations. 
+The reason for this is that it is better to store the stones as groups rather than individual coordinates. 
+This makes it easier to destroy a group as a whole when it is captured
+* Board includes various functions which control and update the maps each time a stone is placed
+* Board has a **filePrint** function, which stores the current state of the board in a text file. 
+We used an external Python library called PyGame to copy the data and render a graphical display. It updates live as the user plays the game
+* In addition to Board, we implement a Game interface to control the flow of the game. It has a pointer to the Board variable
+* Game has a function called `doPlayerMove()`. This function asks the user to input a move. 
+When a move is entered, further functions simulate the move on a dummy board to test whether it would break any rules. If not, then it allows the move
+* Game's main loop function is 'run()'. It repeatedly calls `doPlayerMove()` until it receives two successive passes, 
+indicating that both players have opted to end the game
+
 ## Installation
 
 You need to have a GO compiler installed on your machine (https://golang.org/doc/install), and the pyGame tool (http://www.pygame.org/download.shtml).
@@ -48,3 +67,8 @@ You need to have a GO compiler installed on your machine (https://golang.org/doc
 
 First, you need to run the **baduk.go** via typing `go run baduk.go` in your terminal. Then, run **goGraphics.py** via typing `python2 goGraphics.py`. 
 You play the game using the terminal window, following the instructions on the screen, and the pyGame will simulate your movements on the X window screen. 
+
+## References
+
+* Balbaert, Ivo, *The Way to Go: A Thorough Introduction To The Go Programming Language*, iUniverse, 2012, pp. 1-35
+* *The GO Programming Language* (http://www.golang.org)
