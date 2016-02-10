@@ -2,10 +2,13 @@
 # GO Game
 
 **An implementation of the Chinese board game GO.**
+
 **This is a final project for Programming Languages course (CS242) given at KAUST in Spring 2014.**
+
 **Implemented using: Google GO Programming Language**
 
 **Development Team:**
+
 *Liam Mencel (liam.mencel@kaust.edu.sa)
 *Mohammed Al Farhan (mohammed.farhan@kaust.edu.sa)
 
