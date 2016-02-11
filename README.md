@@ -59,14 +59,20 @@ When a move is entered, further functions simulate the move on a dummy board to 
 * Game's main loop function is `run()`. It repeatedly calls `doPlayerMove()` until it receives two successive passes, 
 indicating that both players have opted to end the game
 
-## Installation
+## Installation Requirements
 
-You need to have a GO compiler installed on your machine (https://golang.org/doc/install), and the pyGame tool (http://www.pygame.org/download.shtml).
+* GO compiler installed on your machine (https://golang.org/doc/install)
+* Python PyGame tool (http://www.pygame.org/download.shtml)
 
-## Usage
+## Execution
 
-First, you need to run the **baduk.go** via typing `go run baduk.go` in your terminal. Then, run **goGraphics.py** via typing `python2 goGraphics.py`. 
-You play the game using the terminal window, following the instructions on the screen, and the pyGame will simulate your movements on the X window screen. 
+* Run **baduk.go** using the terminal: `go run baduk.go` 
+* Run **goGraphics.py** using different terminal window: `python2 goGraphics.py` 
+
+## How to Play the Game?
+
+* Use the terminal window for GO to play the game following the instructions give at each step on the screen 
+* Use the pyGame tool to visualize your game movements on the X window screen 
 
 ## References
 
