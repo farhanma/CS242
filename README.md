@@ -71,7 +71,7 @@ indicating that both players have opted to end the game
 
 ## How to Play the Game?
 
-* Use the terminal window for GO to play the game following the instructions give at each step on the screen 
+* Use the terminal window for GO to play the game, and follow the instructions given at each step on the screen 
 * Use the pyGame tool to visualize your game movements on the X window screen 
 
 ## References
