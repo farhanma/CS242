@@ -2,8 +2,8 @@
 # GO Game
 
 This project is an implementation of the Chinese board game GO.
-This is a final project for the Programming Languages course (CS242) given at KAUST in Spring 2014.
-Implemented using: Google GO Programming Language.
+This was a final project for the graduate-level course CS242: Programming Languages, which was given at KAUST in Spring semester 2014.
+The code is written by Google GO Programming Language.
 
 **Development Team:**
 
