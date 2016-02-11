@@ -56,7 +56,7 @@ We used an external Python library called PyGame to copy the data and render a g
 * In addition to Board, we implement a Game interface to control the flow of the game. It has a pointer to the Board variable
 * Game has a function called `doPlayerMove()`. This function asks the user to input a move. 
 When a move is entered, further functions simulate the move on a dummy board to test whether it would break any rules. If not, then it allows the move
-* Game's main loop function is 'run()'. It repeatedly calls `doPlayerMove()` until it receives two successive passes, 
+* Game's main loop function is `run()`. It repeatedly calls `doPlayerMove()` until it receives two successive passes, 
 indicating that both players have opted to end the game
 
 ## Installation
