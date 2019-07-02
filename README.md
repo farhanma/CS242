@@ -1,5 +1,5 @@
 
-# GO Game
+# GO Game (GO by Go)
 
 This project is an implementation of the Chinese board game GO.
 This was a final project for the graduate-level course CS242: Programming Languages, which was given at KAUST in Spring semester 2014.
