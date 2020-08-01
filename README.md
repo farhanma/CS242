@@ -1,5 +1,5 @@
 
-# GO Game (GO by Go)
+# Go Game (GobyGo)
 
 This project is an implementation of the Chinese board game GO.
 This was a final project for the graduate-level course CS242: Programming Languages, which was given at KAUST in Spring semester 2014.
@@ -10,7 +10,7 @@ The code is written by Google GO Programming Language.
 * Liam Mencel (liam.mencel@kaust.edu.sa)
 * Mohammed Al Farhan (mohammed.farhan@kaust.edu.sa)
 
-## A brief outline of GO
+## A brief outline of go
 
 The board game Go is known to have originated in China at least 2500 years ago. 
 Since then it has been a popular game worldwide, played by many philosophers, scientists, academics, hobbyists, and even warlords. 
@@ -21,7 +21,7 @@ It requires a lot less attention to complex detail than that of say Chess, and t
 Despite its simplicity, the game derives quite complex gameplay, which is algorithmic in nature, 
 and through good use of algorithms and data structures it makes for a very interesting project.
 
-### Rules of GO
+### Rules of go
 
 The general rules of the game can be found in the Wikipedia page: https://en.wikipedia.org/wiki/Go_(game).
 
@@ -40,7 +40,7 @@ This is because players usually end the game early when they think one player is
 The program would not easily be able to evaluate this as well as humans do, 
 hence we have decided not to implement an AI-based scoring system
 
-## Implementation Details
+## Implementation details
 
 * To take advantage of the GO language's strong support for Interfaces, we use an object-oriented approach for handling the game. 
 The entire state of the board is stored in a struct called **Board**
@@ -59,7 +59,7 @@ When a move is entered, further functions simulate the move on a dummy board to 
 * Game's main loop function is `run()`. It repeatedly calls `doPlayerMove()` until it receives two successive passes, 
 indicating that both players have opted to end the game
 
-## Installation Requirements
+## Installation requirements
 
 * GO compiler installed on your machine (https://golang.org/doc/install)
 * Python PyGame tool (http://www.pygame.org/download.shtml)
@@ -69,7 +69,7 @@ indicating that both players have opted to end the game
 * Run **baduk.go** using the terminal: `go run baduk.go` 
 * Run **goGraphics.py** using different terminal window: `python2 goGraphics.py` 
 
-## How to Play the Game?
+## How to play the game?
 
 * Use the terminal window for GO to play the game, and follow the instructions given at each step on the screen 
 * Use the pyGame tool to visualize your game movements on the X window screen 
